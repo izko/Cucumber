@@ -10,7 +10,7 @@
   // border: 1px solid red; //roboczo
 
   .row{
-    border: 1px solid red;
+    // border: 1px solid red;
     &::before,
     &::after{
       @extend %clearfix;
@@ -23,9 +23,9 @@
     }
 
     @media (min-width: 500px) {
-       @for $i from 1 through 16 {
+       @for $i from 1 through 2 {
         .col-#{$i} {
-          width: (100% / 16) * $i;
+          width: (100% / 2) * $i;
         }
       }
     }

@@ -1,0 +1,41 @@
+@import "modules/_variables";
+
+.adventures {
+  .row {
+    // height: 40px;
+
+    .col-1:first-of-type {
+      padding-top: 13%;
+      padding-left: 10%;
+      h3 {
+        font-size: $paragraph-size;
+      }
+      h1 {
+        font-size: $h1-adventures;
+      }
+      p {
+        font-size: $paragraph-size;
+        text-align:left;
+        @media (min-width: 650px) and (max-width: 800px) {
+          font-size: $paragraph-size/1.3;
+        }
+        @media (min-width: 501px) and (max-width: 649px) {
+          font-size: $paragraph-size/1.8;
+        }
+      }
+      @media (max-width: 900px) {
+        padding-top: 5%;
+        padding-left: 5%;
+      }
+    }
+
+    .col-1:last-of-type {
+      img:first-of-type {
+        position:absolute;
+        @media (max-width: 500px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
