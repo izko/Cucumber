@@ -1,0 +1,32 @@
+@import "modules/_variables";
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  // border: 1px solid red; //roboczo
+
+  .row{
+    &::before,
+    &::after{
+      @extend %clearfix;
+    }
+
+    [class*=col-]{
+      float: left;
+      min-height: 1px;
+      width: 100%;
+    }
+
+    @media (min-width: 500px) {
+       @for $i from 1 through 16 {
+        .col-#{$i} {
+          width: (100% / 16) * $i;
+        }
+      }
+    }
+  }
+}
