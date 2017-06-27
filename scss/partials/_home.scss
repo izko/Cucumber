@@ -1,0 +1,48 @@
+@import "modules/_variables";
+
+.home {
+  background: url('../images/home.png') left no-repeat;
+  height:100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-position: top center;
+  background-position-x: left;
+  background-position-y: center;
+  background-size: cover;
+  // position: absolute;
+  top:0;
+  left:0;
+  // z-index: 1;
+
+  div.container{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+
+    h1 {
+      text-align: center;
+      // height: 50vh;
+      // width: 100vw;
+      font-size: $h1-size;
+      font-weight: bold;
+      color: $text-header;
+      display: block;
+      span {
+        font-weight: bold;
+        font-size: $h1-size;
+        color: $cucumber;
+      }
+      p {
+  
+      }
+    }
+  }
+}
+
+.home2 {
+  min-height: 70vh;
+}

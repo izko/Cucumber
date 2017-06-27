@@ -10,6 +10,7 @@
   // border: 1px solid red; //roboczo
 
   .row{
+    border: 1px solid red;
     &::before,
     &::after{
       @extend %clearfix;

@@ -1,14 +1,19 @@
 @import "modules/_grid.scss";
 @import "modules/_variables.scss";
 @import "partials/_header.scss";
+@import "partials/_home.scss";
 @import "partials/_base.scss";
 // @import "partials/_slider.scss";
 
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 body {
   background-color: $main-color;
+
 }
