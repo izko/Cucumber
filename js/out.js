@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,19 +73,12 @@
 "use strict";
 
 
-var _slider = __webpack_require__(2);
+var _slider = __webpack_require__(1);
 
 document.addEventListener("DOMContentLoaded", function (event) {});
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(0);
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -96,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     var slider = document.getElementById("slider");
     var sliderWidth = slider.offsetWidth;
-    var slideList = document.getElementById("slideWrap");
     var count = 1;
+    var slideList = document.getElementById("slideWrap");
     var items = slideList.querySelectorAll("li").length;
     var prev = document.getElementById("prev");
     var next = document.getElementById("next");
@@ -145,6 +138,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
     responsiveSlider();
   };
 });
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
 
 /***/ })
 /******/ ]);

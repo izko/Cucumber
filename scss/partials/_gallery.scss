@@ -2,6 +2,10 @@
 
 .gallery {
   padding:10% 0;
+  span {
+    color: $cucumber;
+    font-weight: bold;
+  }
 }
 
 #slider {

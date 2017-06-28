@@ -3,8 +3,8 @@ const responsiveSlider = function() {
 
   const slider = document.getElementById("slider");
   let sliderWidth = slider.offsetWidth;
-  const slideList = document.getElementById("slideWrap");
   let count = 1;
+  const slideList = document.getElementById("slideWrap");
   const items = slideList.querySelectorAll("li").length;
   const prev = document.getElementById("prev");
   const next = document.getElementById("next");
