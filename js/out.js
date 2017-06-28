@@ -75,7 +75,21 @@
 
 var _slider = __webpack_require__(1);
 
-document.addEventListener("DOMContentLoaded", function (event) {});
+__webpack_require__(3);
+
+document.addEventListener("DOMContentLoaded", function (event) {
+
+  $(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+
+    $('#scroll').css({
+      // 'transform' : 'translate (0px, 200px)'
+      // 'border' : '1px solid red'
+    });
+    // console.log($('#scroll'));
+  });
+  // 'transform' : 'translate (0px, '+ wScroll/2 +'%)'
+});
 
 /***/ }),
 /* 1 */
@@ -145,6 +159,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 module.exports = __webpack_require__(0);
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$(function () {
+
+    var links = $('ul a');
+    links.on('click', function (event) {
+        event.preventDefault();
+        var hrefValue = $(this).attr('href'),
+            positionHref = $(hrefValue).offset();
+        $('html, body').animate({
+            scrollTop: positionHref.top
+        }, 1000);
+    });
+});
 
 /***/ })
 /******/ ]);
