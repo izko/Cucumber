@@ -73,9 +73,25 @@
 "use strict";
 
 
-document.addEventListener("DOMContentLoaded", function (event) {
+var _slider = __webpack_require__(2);
 
-  //slider
+document.addEventListener("DOMContentLoaded", function (event) {});
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+document.addEventListener("DOMContentLoaded", function (event) {
   var responsiveSlider = function responsiveSlider() {
 
     var slider = document.getElementById("slider");
@@ -129,13 +145,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     responsiveSlider();
   };
 });
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(0);
-
 
 /***/ })
 /******/ ]);
