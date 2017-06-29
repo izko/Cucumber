@@ -1,8 +1,13 @@
 $(function()	{
-  //adventures text scroll
   $(window).scroll(function(){
-    const wScroll = $(this).scrollTop();
 
+    //h1 main scroll
+    const wScroll = $(this).scrollTop();
+    $('#scrollH1').css({
+      'transform' : 'translate(0px, '+ wScroll / 2.5 + '%)'
+    });
+
+    //adventures text scroll
     $('#scroll').css({
       'transform' : 'translate(0px, '+ wScroll / 20 +'%)'
     });
@@ -17,5 +22,7 @@ $(function()	{
       $('header a').removeClass('color-change')
       $('div.logo img').attr('src',	'images/wh_logo1.png');
     }
+
+
   });
 });

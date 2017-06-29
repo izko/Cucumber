@@ -105,10 +105,15 @@ $(function () {
 
 
 $(function () {
-  //adventures text scroll
   $(window).scroll(function () {
-    var wScroll = $(this).scrollTop();
 
+    //h1 main scroll
+    var wScroll = $(this).scrollTop();
+    $('#scrollH1').css({
+      'transform': 'translate(0px, ' + wScroll / 2.5 + '%)'
+    });
+
+    //adventures text scroll
     $('#scroll').css({
       'transform': 'translate(0px, ' + wScroll / 20 + '%)'
     });
