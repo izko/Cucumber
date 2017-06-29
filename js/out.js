@@ -110,7 +110,7 @@ $(function () {
     //h1 main scroll
     var wScroll = $(this).scrollTop();
     $('#scrollH1').css({
-      'transform': 'translate(0px, ' + wScroll / 2.5 + '%)'
+      'transform': 'translate(0px, ' + wScroll / 3.5 + '%)'
     });
 
     //adventures text scroll

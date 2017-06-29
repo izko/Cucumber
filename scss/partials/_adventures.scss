@@ -6,10 +6,11 @@
       padding-top: 13%;
       padding-left: 10%;
       h3 {
-        font-size: $paragraph-size;
+        font-size: $paragraph-size*1.2;
+        padding-bottom: 5%;
       }
       h1 {
-        font-size: $h1-adventures;
+        font-size: $h1-adventures*1.2;
       }
       p {
         font-size: $paragraph-size;
@@ -24,6 +25,13 @@
       @media (max-width: 900px) {
         padding-top: 5%;
         padding-left: 5%;
+        h1 {
+          font-size: $h1-adventures;
+        }
+        h3 {
+          font-size: $paragraph-size;
+          padding-bottom: 0;
+        }
       }
   }
 
@@ -31,7 +39,7 @@
       img:first-of-type {
         position:absolute;
         z-index: 1;//
-        top: 500px; 
+        top: 500px;
         @media (max-width: 800px) {
           display: none;
         }
