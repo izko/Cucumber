@@ -98,15 +98,14 @@ $(function () {
     });
 
     //menu scroll
-    var menu = $('header a');
-
     if (wScroll > $('#secAdventures').offset().top - $(window).height() / 100) {
-
       $('#homeHeader').addClass('is-showing');
       $('header a').addClass('color-change');
+      $('div.logo img').attr('src', 'images/black_logo1.png');
     } else {
       $('#homeHeader').removeClass('is-showing');
       $('header a').removeClass('color-change');
+      $('div.logo img').attr('src', 'images/wh_logo1.png');
     }
   });
 });
