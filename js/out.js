@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,26 +73,54 @@
 "use strict";
 
 
-var _slider = __webpack_require__(1);
+var _slider = __webpack_require__(3);
 
-__webpack_require__(3);
+__webpack_require__(2);
 
-document.addEventListener("DOMContentLoaded", function (event) {
+__webpack_require__(1);
 
+document.addEventListener("DOMContentLoaded", function (event) {});
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$(function () {
+  //adventures text scroll
   $(window).scroll(function () {
     var wScroll = $(this).scrollTop();
 
     $('#scroll').css({
-      // 'transform' : 'translate (0px, 200px)'
-      // 'border' : '1px solid red'
+      'transform': 'translate(0px, ' + wScroll / 20 + '%)'
     });
-    // console.log($('#scroll'));
   });
-  // 'transform' : 'translate (0px, '+ wScroll/2 +'%)'
 });
 
 /***/ }),
-/* 1 */
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$(function () {
+
+    var links = $('ul a');
+    links.on('click', function (event) {
+        event.preventDefault();
+        var hrefValue = $(this).attr('href'),
+            positionHref = $(hrefValue).offset();
+        $('html, body').animate({
+            scrollTop: positionHref.top
+        }, 1000);
+    });
+});
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -154,31 +182,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 /***/ }),
-/* 2 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
 
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-$(function () {
-
-    var links = $('ul a');
-    links.on('click', function (event) {
-        event.preventDefault();
-        var hrefValue = $(this).attr('href'),
-            positionHref = $(hrefValue).offset();
-        $('html, body').animate({
-            scrollTop: positionHref.top
-        }, 1000);
-    });
-});
 
 /***/ })
 /******/ ]);

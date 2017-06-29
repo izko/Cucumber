@@ -25,12 +25,14 @@
         padding-top: 5%;
         padding-left: 5%;
       }
-    }
+  }
 
     .col-1:last-of-type {
       img:first-of-type {
         position:absolute;
-        @media (max-width: 620px) {
+        z-index: 1;//
+        top: 500px; 
+        @media (max-width: 800px) {
           display: none;
         }
       }

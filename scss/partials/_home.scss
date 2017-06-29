@@ -8,13 +8,12 @@
   background-color: #ffffff;
   background-attachment: fixed;
   background-position: top center;
-  // background-position-x: left;
-  // background-position-y: center;
   background-size: cover;
-  // position: absolute;
   top:0;
   left:0;
-  // z-index: 1;
+  //do scrolla
+  position: relative;
+  z-index: 10;
 
   div.container{
   display: flex;
