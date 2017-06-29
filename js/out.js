@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,7 +73,9 @@
 "use strict";
 
 
-var _slider = __webpack_require__(3);
+var _slider = __webpack_require__(4);
+
+__webpack_require__(3);
 
 __webpack_require__(2);
 
@@ -83,6 +85,17 @@ document.addEventListener("DOMContentLoaded", function (event) {});
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+$(function () {
+    $("img.lazy").lazyload();
+});
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -111,7 +124,7 @@ $(function () {
 });
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -136,9 +149,10 @@ $(function () {
         }, 1000);
     });
 });
+//scroll menu - odnośniki
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -200,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
