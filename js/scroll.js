@@ -5,9 +5,15 @@ $(function()	{
       event.preventDefault();
       const hrefValue = $(this).attr('href'),
             positionHref = $(hrefValue).offset();
+            // console.log(positionHref, $(hrefValue));
+            // console.log(hrefValue);
+
+      if (hrefValue== '#homeHeader') {
+          positionHref.top = 0;
+      }
+
       $('html, body').animate({
           scrollTop: positionHref.top
       }, 1000);
   })
-
 });

@@ -1,8 +1,8 @@
 @import "modules/_variables";
 
 header{
-  height: 2rem;
-  line-height: 2rem;
+  height: 3rem;
+  line-height: 3rem;
   position:fixed;
   z-index: 11;
   // border: 1px solid white;//roboczo
@@ -20,13 +20,19 @@ header{
   }
 
   .logo {
-    color: whitelo;
+    color: white;
     float: right;
     // position:relative;
     // z-index: 2;
   }
 }
 
+//background menu
 .is-showing {
-  background: $cucumber;
+  background: rgba(251, 235, 104, 0.6);
+}
+
+//links 'a' color
+.color-change {
+  color: rgba(0, 0, 0, 0.8);
 }

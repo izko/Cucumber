@@ -98,24 +98,17 @@ $(function () {
     });
 
     //menu scroll
-    if (wScroll > $('#secAdventures').offset().top) {
+    var menu = $('header a');
+
+    if (wScroll > $('#secAdventures').offset().top - $(window).height() / 100) {
+
       $('#homeHeader').addClass('is-showing');
+      $('header a').addClass('color-change');
     } else {
       $('#homeHeader').removeClass('is-showing');
+      $('header a').removeClass('color-change');
     }
   });
-
-  //  if(wScroll > $('#secAdventures').offset().top - ($(window).height() / 1.2)) {
-  //
-  //   $('.clothes-pics figure').each(function(i){
-  //
-  //     setTimeout(function(){
-  //       $('.clothes-pics figure').eq(i).addClass('is-showing');
-  //     }, 150 * (i+1));
-  //   });
-  //
-  // }
-
 });
 
 /***/ }),
@@ -132,6 +125,13 @@ $(function () {
         event.preventDefault();
         var hrefValue = $(this).attr('href'),
             positionHref = $(hrefValue).offset();
+        // console.log(positionHref, $(hrefValue));
+        // console.log(hrefValue);
+
+        if (hrefValue == '#homeHeader') {
+            positionHref.top = 0;
+        }
+
         $('html, body').animate({
             scrollTop: positionHref.top
         }, 1000);
