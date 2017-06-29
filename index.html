@@ -13,7 +13,14 @@
 <header id="homeHeader">
   <div class="container clearfix">
     <nav>
-      <ul>
+      <!-- hamburger start ZAPISAĆ MOBILE JAKO MIXIN!-->
+      <a href="#" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </a>
+      <!-- end PLUS dodana poniższa klasa menu -->
+      <ul class="menu">
         <li><a href="#homeHeader">Home</a></li>
         <li><a href="#secAdventures">About</a></li>
         <li><a href="#secGallery">Gallery</a></li>
@@ -52,7 +59,7 @@
     </div>
     <div class="col-1">
       <img id="scroll" src="./images/text.png" alt="">
-      <img class = "lazy" data-original="./images/color_preikestolen.jpg" alt="">
+      <img src="./images/color_preikestolen.jpg" alt="">
     </div>
   </div>
 </section>
@@ -79,7 +86,7 @@
   </div>
 </section>
 
-<section id = "secMap" class="map">
+<section id = "secMap"class="map">
   <div class="container">
     <div class="paragraph">
       <h1>Day 9<br>
@@ -100,7 +107,6 @@
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous">
 </script>
-<script src="jquery.lazyload.js"></script>
 <script src="js/out.js" type="text/javascript"></script>
 </body>
 </html>

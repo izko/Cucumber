@@ -1,7 +1,8 @@
 import { responsiveSlider } from "./slider";
 import "./scroll"
 import "./parallax"
-import "./lazyload"
+import "./hamburger.js"
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
 

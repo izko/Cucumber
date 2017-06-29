@@ -1,0 +1,46 @@
+@media only screen and (max-width: 480px) {
+
+  .hamburger {
+    padding: 15px;
+    display: block;
+  } 
+
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  nav li {
+    width: 100%;
+  }
+
+  .menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+    background: rgba(251, 235, 104, 0.6);
+    display: flex;
+    flex-direction: column;
+    li {
+      display: flex;
+      justify-content: center;
+      a {
+        font-size: 2rem;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  .slide-down {
+    height: 275px;
+  }
+}
