@@ -32,16 +32,12 @@
     background: rgba(251, 235, 104, 0.6);
     display: flex;
     flex-direction: column;
-    ul {
-  //usunąć dolny margines
-    }
     li {
       display: flex;
       justify-content: center;
       a {
         font-size: 2rem;
         text-decoration: none;
-
         &:hover {
           text-decoration: line-through;
         }

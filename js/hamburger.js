@@ -3,4 +3,4 @@ $(function()	{
     e.preventDefault();
     $('.menu').toggleClass('slide-down');
   });
-});
+}); 
