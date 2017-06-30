@@ -3,7 +3,7 @@
 .map {
   overflow: hidden;
   min-width: 50vw;
-  min-height: 80vh;
+  min-height: 43vh;
   // background: url('../images/map.svg');
   .container{
     overflow: hidden;
@@ -29,7 +29,7 @@
           font-size: $paragraph-size/1.4;
         }
         @media (max-width: 749px) {
-          font-size: $paragraph-size/1.2;
+          font-size: $paragraph-size/1.3;
         }
       }
 

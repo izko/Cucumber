@@ -33,7 +33,9 @@
       height: 100%;
       width: calc(80vw);
       float: left;
-
+      &:first-of-type {
+        padding-left: 5vw;
+      }
 
       img {
         // width: 100vw;

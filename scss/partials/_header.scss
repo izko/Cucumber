@@ -16,6 +16,10 @@ header{
       color: white;
       padding-right: 0.5rem;
       font-size: $nav-size;
+      text-decoration: none;
+      &:hover {
+        text-decoration: line-through;
+      }
     }
   }
 
