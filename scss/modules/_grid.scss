@@ -7,10 +7,9 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  // border: 1px solid red; //roboczo
+  padding: 0 0.5rem;
 
   .row{
-    // border: 1px solid red;
     &::before,
     &::after{
       @extend %clearfix;

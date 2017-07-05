@@ -1,4 +1,9 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 490px) {
+  div.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
   .logo {
     display: none;
   }
@@ -35,6 +40,8 @@
     li {
       display: flex;
       justify-content: center;
+      padding-bottom: 0.5rem;
+      line-height: 2.5rem;
       a {
         font-size: 2rem;
         text-decoration: none;

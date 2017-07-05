@@ -1,11 +1,9 @@
 @import "modules/_variables";
 
 header{
-  height: 3rem;
-  line-height: 3rem;
+  line-height: 4rem;
   position:fixed;
   z-index: 11;
-  // border: 1px solid white;//roboczo
   width: 100vw;
 
 
@@ -26,14 +24,12 @@ header{
   .logo {
     color: white;
     float: right;
-    // position:relative;
-    // z-index: 2;
   }
 }
 
 //background menu
 .is-showing {
-  background: rgba(251, 235, 104, 0.6);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 //links 'a' color
