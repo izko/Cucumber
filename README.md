@@ -11,4 +11,4 @@ One-page website, own conception. Made from scratch, using knowledge, which I ga
 * gulp.js
 * webpack
 
-See the result here: https://izko.github.io/Cucumber/
+See the result here: https://izko.github.io/Cucumber-FINAL-PROJECT/
