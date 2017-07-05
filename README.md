@@ -1,5 +1,5 @@
 # Cucumber
-Project of one-page website. Made from scratch, using knowledge, which I gained during coding bootcamp.
+One-page website, own conception. Made from scratch, using knowledge, which I gained during six-week coding bootcamp.
 
 ## Technologies:
 * HTML5
