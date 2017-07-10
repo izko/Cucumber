@@ -5,12 +5,21 @@ header{
   position:fixed;
   z-index: 11;
   width: 100vw;
+  -webkit-transition: background-color 0.7s ease;
+  -moz-transition: background-color 0.7s ease;
+  -o-transition: background-color 0.7s ease;
+  transition: background-color 0.7s ease;
+  background: transparent;
 
 
   li {
     display: inline-block;
     float: left;
     a {
+      -webkit-transition: color 0.7s ease;
+      -moz-transition: color 0.7s ease;
+      -o-transition: color 0.7s ease;
+      transition: color 0.7s ease;
       color: white;
       padding-right: 0.5rem;
       font-size: $nav-size;
