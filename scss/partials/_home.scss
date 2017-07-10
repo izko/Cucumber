@@ -37,6 +37,10 @@
       strong {
         color: $text-header;
         font-size: ($h1-size)/2;
+        em {
+          border-right: 2px solid;
+          animation: cursor 1s steps(1) infinite;
+        }
       }
     }
   }

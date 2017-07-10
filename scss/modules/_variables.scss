@@ -13,6 +13,12 @@ $text-header: white;
 $textColorheader: white;
 $main-color: white;
 
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
 ///////main//////
 //section home
 $h1-size: 5.0vh;
