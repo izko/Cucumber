@@ -24,5 +24,9 @@ $(function()	{
     }
 
 
+    //adventures-img-parallax
+    if (wScroll > $('#secAdventures').offset().top - ($(window).height() / 1.5) ) {
+        $('#secAdventures .col-1 img:last-of-type').addClass('img-parallax');
+    }
   });
 });
