@@ -105,7 +105,7 @@ $h1-adventures: 1.5rem;
   }
 
 //section gallery
-@-moz-keyframes slide-right-long {
+@-webkit-keyframes slide-right-long {
   from {
     -webkit-transform: translateX(-300px);
             transform: translateX(-300px);
@@ -115,6 +115,26 @@ $h1-adventures: 1.5rem;
             transform: translateX(0);
     opacity: 1; }
   }
+@-moz-keyframes slide-right-long {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; }
+}
+@keyframes slide-right-long {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1; }
+}
 
 //contact
 @-webkit-keyframes slide-down {
