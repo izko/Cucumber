@@ -23,6 +23,7 @@
   justify-content: center;
 
     h1 {
+      animation: slide-up 2s 0.5s backwards;
       text-align: center;
       // height: 50vh;
       font-size: $h1-size;

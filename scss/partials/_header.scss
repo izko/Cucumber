@@ -11,6 +11,8 @@ header{
   transition: background-color 0.7s ease;
   background: transparent;
 
+  animation: slide-up 2s 0.7s backwards;
+
 
   li {
     display: inline-block;
@@ -33,6 +35,7 @@ header{
   .logo {
     color: white;
     float: right;
+    animation: slide-up 2s 1s backwards;
   }
 }
 

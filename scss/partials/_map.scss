@@ -14,12 +14,14 @@
       top:30vh;
 
       h1 {
+        opacity: 0;
         font-size: $h1-adventures;
         @media (max-width: 850px) {
           font-size: $h1-adventures/1.4;
         }
       }
       p {
+        opacity: 0;
         font-size: $paragraph-size;
         text-align:left;
         @media (min-width: 750px) and (max-width: 850px) {
@@ -52,4 +54,11 @@
       top: 0;
     }
   }
+}
+
+.text-parallax-1 {
+  animation: slide-right 2s forwards;
+}
+.text-parallax-2 {
+  animation: slide-right 2s 0.5s forwards;
 }

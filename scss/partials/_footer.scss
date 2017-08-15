@@ -1,6 +1,7 @@
 @import "modules/_variables";
 
 footer {
+  opacity: 0;
   padding-left: 0.5rem;
   line-height: 4rem;
   font-size: 1rem;
@@ -16,4 +17,8 @@ footer {
       }
     }
   }
+}
+
+.text-parallax {
+  animation: slide-down 2s 0.5s forwards;
 }

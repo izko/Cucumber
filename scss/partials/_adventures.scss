@@ -8,11 +8,14 @@
       h3 {
         font-size: $paragraph-size*1.2;
         padding-bottom: 5%;
+        opacity: 0;
       }
       h1 {
         font-size: $h1-adventures*1.2;
+        opacity: 0;
       }
       p {
+        opacity: 0;
         font-size: $paragraph-size;
         text-align:left;
         @media (min-width: 650px) and (max-width: 800px) {
@@ -62,41 +65,17 @@
 }
 
 .img-parallax {
-  -webkit-animation: 2s slide-right forwards;
-  animation: 2s slide-right forwards;
+  -webkit-animation: 2s slide-left forwards;
+  animation: 2s slide-left forwards;
   opacity: 1;
 }
 
-@-webkit-keyframes slide-right {
-  from {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;  }
-  }
-
-@-moz-keyframes slide-right {
-  from {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1; }
-  }
-
-@keyframes slide-right {
-  from {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-    opacity: 0; }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1; }
-  }
+.text-parallax-1 {
+  animation: slide-right 2s forwards;
+}
+.text-parallax-2 {
+  animation: slide-right 2s 0.5s forwards;
+}
+.text-parallax-3 {
+  animation: slide-right 2s 1s forwards;
+}
